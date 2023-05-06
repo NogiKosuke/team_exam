@@ -15,7 +15,6 @@ class AssignsController < ApplicationController
   end
 
   def destroy
-    binding.pry
     assign = Assign.find(params[:id])
     destroy_message = assign_destroy(assign, assign.user)
 
